@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 
 # Trier les fichiers d'un repertoire par type
 import glob
