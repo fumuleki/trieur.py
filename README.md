@@ -1,2 +1,1 @@
-# trieur.py
-# python-trier
+# python-trier-deplacer les fichier d'un repertoire
