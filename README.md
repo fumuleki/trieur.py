@@ -7,21 +7,21 @@ Avant de realiser cet  script il faut:
    - Identifier les types de fichiers(videos, images, archive, pdf,...)
    - Deplacer les fichiers dans le bon dossier
   
-vous devez import les éléments comme:
+#vous devez import les éléments comme:
   - import glob
   - import shutil
   - import os
-  - from os import path
+  - from os import path 
   
-vous devez trier les fichiers d'un repertoire par type des extensions 
+#vous devez trier les fichiers d'un repertoire par type des extensions
   - extensionsDocuments = ['.doc', '.pdf', '.pptx']
   - extensionsMedia = ['.png', '.jpeg', '.avi', '.mkv', '.mp4']
   - extensionsSource = ['.zip', '.exe', '.7z', '.msi']
   
-vous devez donner la variable de repertoire où se trouve les fichiers
+#vous devez donner la variable de repertoire où se trouve les fichiers
   - base_folder = "C:/foutoir"
 
-LISTER LE CONTENU DU REPERTOIRE
+#LISTER LE CONTENU DU REPERTOIRE
   - docFiles = os.path.join(base_folder, 'documents')
   - mediaFiles = os.path.join(base_folder, 'media')
   - sourceFiles = os.path.join(base_folder, 'sources')
@@ -29,10 +29,9 @@ LISTER LE CONTENU DU REPERTOIRE
 files = glob.glob(os.path.join(base_folder,"*"))
 
 #trouver l'extension
-
   - for file in files:
   - extension = os.path.splitext(file)[1].lower() 
- 
+
 #vous devez deplacer dans dossier documents 
 
     if extension in extensionsDocuments:
