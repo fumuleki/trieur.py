@@ -1,13 +1,21 @@
-# python-trier-deplacer les fichier d'un repertoire
+# Automatisation et Python: organisation des fichiers
 
+Ecrire des scripts pour automatiser les tâches est génial, mais automatiser des scripts est encore mieux. Donc, ici dans cet projet, j'ai touché les deux couches pour résoudre le problème d'organisation de nos fichiers et dossiers. Je dois montrer comment l'automatisation peut nous aider. je viens d'ecrire un script pour automatiser la tâche de déplacement de nos fichiers vers des dossiers respectifs en fonction de leur type de fichier, puis j'ai automatisé l'exécution de ce script.
 Il s'agit d'un script qui s'exécute à la demande ou de manière automatique qui regarde tous nos fichiers dans ce dossier petrit par les images, films, et fichiers d'archive.
 
-Avant de realiser cet  script il faut:
+Avant d'écrire ce script il faut:
    - lister le contenu du repertoire
    - Identifier les types de fichiers(videos, images, archive, pdf,...)
    - Deplacer les fichiers dans le bon dossier
   
-#vous devez import les éléments comme:
+1. Ecrire un script pour automatiser le déplacement des fichiers - En cela, j'ai utilisé python pour écrire un script pour déplacer automatiquement nos differents fichiers du dossier foutir vers différents dossiers en fonction de leur type de fichier. Par exemple, si nous avons une image, elle sera automatiquement déplacée vers le dossier Media, si nous avons un document pdf, il sera déplacé vers le dossier Documents, si nous avons un fichier zip, il sera déplace vers le dossier Source et ainsi de suite. Nous utiliserons les modules os et shutil de python pour cela.
+2. Automatiser l'exécution du script - En cela, nous allons en quelque sorte demander à notre système d'exploitation d'exécuter automatiquement notre script toutes les heures (ou quel que soit l'intervalle de temps que vous souhaitez).
+  
+# Rédaction de script pour automatiser le déplacement des fichiers et créations des dossiers
+Pré-requis: assurez-vous que python3 est installé sur votre système et que vous avez une certaine connaissance de python pour comprendre le script.
+Accédez maintenant à votre dossier Téléchargements et créez un fichier appelé trieur.py 
+
+#vous devez import les modules python comme:
   - import glob
   - import shutil
   - import os
